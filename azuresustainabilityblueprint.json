@@ -1,0 +1,113 @@
+{
+    "properties": {
+        "parameters": {
+            "[Preview]:AzureDataFactoryintegrationruntimeshouldhavealimitfornumberofcores_effect": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "Effect (Policy: [Preview]: Azure Data Factory integration runtime should have a limit for number of cores)"
+                },
+                "defaultValue": "Audit",
+                "allowedValues": [
+                    "Audit",
+                    "Deny",
+                    "Disabled"
+                ]
+            },
+            "[Preview]:AzureDataFactoryintegrationruntimeshouldhavealimitfornumberofcores_maxCores": {
+                "type": "int",
+                "metadata": {
+                    "displayName": "Allowed max number of cores (Policy: [Preview]: Azure Data Factory integration runtime should have a limit for number of cores)"
+                },
+                "defaultValue": 32,
+                "allowedValues": []
+            },
+            "azureCosmosDBthroughputshouldbelimited_throughputMax": {
+                "type": "int",
+                "metadata": {
+                    "displayName": "Max RUs (Policy: Azure Cosmos DB throughput should be limited)"
+                },
+                "allowedValues": []
+            },
+            "azureCosmosDBthroughputshouldbelimited_effect": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "Policy Effect (Policy: Azure Cosmos DB throughput should be limited)"
+                },
+                "defaultValue": "deny",
+                "allowedValues": [
+                    "audit",
+                    "deny",
+                    "disabled"
+                ]
+            },
+            "allowedvirtualmachinesizeSKUs_listOfAllowedSKUs": {
+                "type": "array",
+                "metadata": {
+                    "displayName": "Allowed Size SKUs (Policy: Allowed virtual machine size SKUs)",
+                    "strongType": "VMSKUs"
+                },
+                "allowedValues": []
+            },
+            "storageaccountsshouldbelimitedbyallowedSKUs_effect": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "Effect (Policy: Storage accounts should be limited by allowed SKUs)"
+                },
+                "defaultValue": "Deny",
+                "allowedValues": [
+                    "Audit",
+                    "Deny",
+                    "Disabled"
+                ]
+            },
+            "storageaccountsshouldbelimitedbyallowedSKUs_listOfAllowedSKUs": {
+                "type": "array",
+                "metadata": {
+                    "displayName": "Allowed SKUs (Policy: Storage accounts should be limited by allowed SKUs)",
+                    "strongType": "StorageSKUs"
+                },
+                "allowedValues": []
+            },
+            "identifyUnattachedExpressRoutecircuits_effect": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "Effect (Policy: Identify Unattached ExpressRoute circuits)"
+                },
+                "defaultValue": "Audit",
+                "allowedValues": [
+                    "Audit",
+                    "Disabled"
+                ]
+            },
+            "onlyapprovedVMextensionsshouldbeinstalled_effect": {
+                "type": "string",
+                "metadata": {
+                    "displayName": "Effect (Policy: Only approved VM extensions should be installed)"
+                },
+                "defaultValue": "Audit",
+                "allowedValues": [
+                    "Audit",
+                    "Deny",
+                    "Disabled"
+                ]
+            },
+            "onlyapprovedVMextensionsshouldbeinstalled_approvedExtensions": {
+                "type": "array",
+                "metadata": {
+                    "displayName": "Approved extensions (Policy: Only approved VM extensions should be installed)"
+                },
+                "allowedValues": []
+            }
+        },
+        "resourceGroups": {},
+        "targetScope": "subscription",
+        "status": {
+            "timeCreated": "2021-10-14T16:27:20+00:00",
+            "lastModified": "2021-10-14T16:28:33.9925608+00:00"
+        },
+        "description": "A Set of Policies that provides alerts on designs that are not sustainably optimized. "
+    },
+    "id": "/subscriptions/fe1255f3-31e3-4902-a61e-76f0e2454ce1/providers/Microsoft.Blueprint/blueprints/sustainabilityadvisor",
+    "type": "Microsoft.Blueprint/blueprints",
+    "name": "sustainabilityadvisor"
+}
