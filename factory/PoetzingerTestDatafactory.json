@@ -1,0 +1,9 @@
+{
+	"name": "PoetzingerTestDatafactory",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "7d558a6f-418b-4b2b-b004-72008677aaa3",
+		"tenantId": "16b3c013-d300-468d-ac64-7eda0820b6d3"
+	}
+}
