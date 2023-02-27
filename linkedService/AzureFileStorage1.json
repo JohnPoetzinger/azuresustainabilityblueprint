@@ -1,0 +1,12 @@
+{
+	"name": "AzureFileStorage1",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureFileStorage",
+		"typeProperties": {
+			"sasUri": "https://poettestsa.file.core.windows.net/?sv=2021-06-08&ss=f&srt=sco&sp=rwdlc&se=2023-07-01T04:27:45Z&st=2023-02-27T21:27:45Z&spr=https&sig=5EkycKybPlW7vmv%2BXtyZFXJz1JOROGLTvptPC9O%2BF%2FI%3D?sv=2021-06-08&ss=f&srt=sco&sp=rwdlc&se=2023-07-01T04:27:45Z&st=2023-02-27T21:27:45Z&spr=https&sig=5EkycKybPlW7vmv%2BXtyZFXJz1JOROGLTvptPC9O%2BF%2FI%3D",
+			"fileShare": "poetfileshare"
+		}
+	}
+}
